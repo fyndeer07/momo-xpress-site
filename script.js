@@ -15,3 +15,14 @@ if (form) {
     }
   });
 }
+
+  // Modal Popup (with delay)
+    window.onload = function () {
+      setTimeout(() => {
+        document.getElementById("welcomeModal").style.display = "block";
+      }, 5000); // Show modal after 5 seconds
+    };
+
+  function closeModal() {
+    document.getElementById("welcomeModal").style.display = "none";
+  }
