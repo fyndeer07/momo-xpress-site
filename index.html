@@ -121,7 +121,18 @@
   </div>
 </footer>
 
+<button id="backToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑ Top</button>
 
+<script>
+  const backToTopButton = document.getElementById("backToTop");
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      backToTopButton.style.display = "block";
+    } else {
+      backToTopButton.style.display = "none";
+    }
+  });
+</script>
   <script src="script.js"></script>
 </body>
 </html>
